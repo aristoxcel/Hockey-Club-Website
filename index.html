@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
@@ -45,13 +48,13 @@
 </head>
 <body class="font-manrope">
     <nav class="container lg:px-24 px-8 mx-auto my-12">
-        <div class="navbar bg-base-100">
+        <div class="navbar px-0">
             <div class="navbar-start">
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Pages</a></li>
@@ -59,62 +62,26 @@
                     <li><a href="#">Contact</a></li>
                   </ul>
               </div>
-              <a class="btn btn-ghost lg:text-4xl  md:text-3xl ">
-               Hockey<span class="text-3xl mb-0 ml-[-4]">'</span>s</a>
+              <a class="btn btn-ghost lg:text-4xl  md:text-3xl font-extrabold gap-0 lg:pl-0 pl-4 ">
+               Hockey<sup class="lg:text-4xl  md:text-3xl font-extrabold text-pinkish gap-0">,</sup>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-xl font-semibold">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="text-pinkish">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Pages</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                   </ul>
             </div>
-            <div class="navbar-end">
-              <a class="btn">Get Ticket</a>
+            <div class="navbar-end flex items-center gap-3">
+                <i class="fa-solid fa-magnifying-glass text-xl font-semibold opacity-0 lg:opacity-90"></i>
+                <a class="btn bg-pinkish px-6  font-bold text-white text-xl text-center">Get Ticket</a>
             </div>
           </div>
     </nav>
-    
 
-    <!-- <nav class="container lg:px-24 px-8 mx-auto my-12">
-        <div class="navbar bg-base-100 ">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Pages</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost lg:text-4xl  md:text-3xl ">
-                <span class="text-btn-clr  text-7xl ">Hockey</span><span class="text-3xl mb-0 ml-[-4]">'</span>
-                <span>s</span> 
-                </a>
-            </div>
-            <div class="navbar-end">
-                <div class="hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-xl font-semibold">
-                      <li><a>Home</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>News</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <div>
-                    <a class="btn rounded-md  bg-btn-clr text-white  border-0 text-xl hover:border-2 hover:border-red-500 hover:text-red-400">Login</a>
-                  </div>
-            </div>
-          </div>
-    </nav> -->
-
-    <header class="container lg:px-24 px-8 mx-auto">
+    <header class="  container lg:px-24 px-8 mx-auto">
         <div>
             <div class="carousel w-full">
                 <!-- slide 1 -->
@@ -179,7 +146,7 @@
     <main>
         <!-- professional section start here -->
         
-        <section class="container lg:px-24 px-8 mx-auto lg:py-20 py-8">
+        <section class="  container lg:px-24 px-8 mx-auto lg:py-20 py-8">
             <hr class="border-dashed ">
             <h1 class="lg:text-4xl text-2xl font-extrabold py-4 lg:py-6 text-center text-[#131318]">Professional Hockeys Club</h1>
             <p class="text-[#13131899] lg:text-base text-sm font-medium text-center lg:w-1/2 md:w-2/3  mx-auto">Dive into the exhilarating world of our Professional Hockeys Club, where skill meets passion on the ice. Join us in the pursuit of excellence as we strive for victory and celebrate the camaraderie that defines our team spirit.</p>
@@ -282,7 +249,7 @@
         </section>
 
         <!-- New Products section start here -->
-        <section class="container lg:px-24 px-8 mx-auto lg:py-12 py-8">
+        <section class="  container lg:px-24 px-8 mx-auto lg:py-12 py-8">
             <hr class="border-dashed lg:my-8 my-6">
             <h1 class="lg:text-4xl text-2xl font-extrabold py-4 lg:py-6 text-center text-[#131318]">Our New Products</h1>
             <p class="text-[#13131899] lg:text-base text-sm font-medium text-center lg:w-1/2 mx-auto">Discover a realm of innovation with Our New Products—a collection designed to redefine your experience. From sleek designs to advanced features, each addition reflects our commitment to staying at the forefront of excellence</p>
@@ -526,6 +493,69 @@
               </div>
 
         </section>
+
+
+        <!-- Social media section -->
+        <section class="container lg:px-24 px-8 mx-auto lg:py-12 py-8">
+            <div class="bg-[#13131805] py-9 rounded-xl">
+                <h1 class="text-heading text-2xl font-bold text-center pb-4">Social Media</h1>
+                <div class="flex justify-center items-center space-x-6 text-2xl">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer bg-black text-white opacity-90 mt-7">
+       <div class="container lg:px-24 px-8 mx-auto lg:py-12 py-8">
+
+        <div class="grid grid-cols-5 gap-12">
+
+            <!-- grid 1 & 2 -->
+            <aside class="lg:col-span-2 col-span-full text-center lg:text-start lg:p-0 ">
+                <h1 class="lg:text-3xl text-2xl font-extrabold  pb-6 text-white">Get In Touch</h1>
+                <p class="text-base font-medium text-white opacity-70 pb-6 lg:w-2/3">our connection matters, and we're here to assist you every step of the way.</p>
+                <div class="flex gap-4 lg:justify-start justify-center items-center pb-3"><i class="fa-regular fa-envelope text-pinkish text-xl"></i><p>hockeys@support.com</p></div>
+                <div class="flex gap-4 lg:justify-start justify-center items-center"><i class="fa-solid fa-phone text-pinkish text-xl"></i></i><p>(+62) 123-321-543</p></div>
+            </aside> 
+
+            <!-- grid 3 &4 -->
+            <div class="lg:col-span-2 col-span-full flex justify-around">
+                <nav class="text-center lg:text-start flex flex-col gap-3">
+                    <header class="text-lg font-bold text-white pb-4">Company</header> 
+                    <a class="link link-hover opacity-70 ">About us</a>
+                    <a class="link link-hover opacity-70 ">Leadership</a>
+                    <a class="link link-hover opacity-70 ">Careers</a>
+                    <a class="link link-hover opacity-70 ">News & Articles</a>
+                    <a class="link link-hover opacity-70 ">Legal Notice</a>
+                  </nav> 
+    
+                <nav class="text-center lg:text-start flex flex-col gap-3">
+                    <header class="text-lg font-bold text-white pb-4">Support</header> 
+                    <a class="link link-hover opacity-70 ">Help Center</a>
+                    <a class="link link-hover opacity-70 ">FAQ</a>
+                    <a class="link link-hover opacity-70 ">Ticket Support</a>
+                    <a class="link link-hover opacity-70 ">Contact Us</a>
+                  </nav> 
+    
+            </div>
+               <!-- grid 5 -->
+                <div class="lg:col-span-1 col-span-full">
+                    <header class="text-center lg:text-start text-lg font-bold text-white pb-5 ">Services</header> 
+                    <nav class="text-center lg:text-start flex flex-col gap-3 opacity-70 ">
+                        <a class="link link-hover">Academy</a>
+                        <a class="link link-hover">Group Lesson</a>
+                        <a class="link link-hover">Private Lesson</a>
+                        <a class="link link-hover">Hockeys for Kids</a>
+                        <a class="link link-hover">Hockeys for Adult</a>
+                    </nav> 
+                </div>
+        </div>
+        
+       </div>
+    </footer>
 </body>
 </html>
